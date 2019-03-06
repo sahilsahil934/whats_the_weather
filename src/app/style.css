@@ -1,0 +1,21 @@
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.title {
+
+    height: 40px;
+    width: 100%;
+    color: blue;
+    font-family: cursive sans-serif;
+    font-size: 32px;
+    background-color: skyblue;
+}
+
+#loaction {
+    padding: 10px;
+}
