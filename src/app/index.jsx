@@ -45,7 +45,7 @@ class Weather extends React.Component {
 
     getWeather = () => {
 
-        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.state.location}&units=metric&APPID=af03bffcdbafbd21062b129dbf1687cc`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.state.location}&units=metric&APPID=af03bffcdbafbd21062b129dbf1687cc`)
             .then(response => response.json())
             .then(data => {
                 this.setState({
