@@ -2,4 +2,4 @@
 
 Weather App made with React and using Openweather API
 
-To visit [Click Here](http://sahilverma.me/whats_the_weather)
+To visit [Click Here](https://sahilverma.me/whats_the_weather)
