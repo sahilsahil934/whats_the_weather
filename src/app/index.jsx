@@ -45,13 +45,13 @@ class Weather extends React.Component {
 
     getWeather = () => {
 
-        fetch(`https://api.apixu.com/v1/current.json?key=e030e73c813d42038df30529190603&q=${this.state.location}`)
+        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.state.location}&units=metric&APPID=af03bffcdbafbd21062b129dbf1687cc`)
             .then(response => response.json())
             .then(data => {
                 this.setState({
-                    place: data.location.name,
-                    temp: data.current.temp_c,
-                    weather: data.current.condition.text
+                    place: data.name,
+                    temp: data.main.temp,
+                    weather: data.weather[0].main
                 });
             });
 
